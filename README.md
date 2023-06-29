@@ -45,4 +45,5 @@ docker-compose up -d
 
 **Note:** You can modify the ports in the `docker-compose.yml` file to run Apache, MySQL, and phpMyAdmin on different ports according to your requirements.
 
+The PHP5 and Apache2 docker image is available at https://hub.docker.com/r/kmahesh541/php5-apache2-mysql5
 
