@@ -11,12 +11,12 @@ sudo docker build --no-cache -t my_apache_php_image .
 
 2. Tag the new Docker image:
 
-sudo docker tag my_apache_php_image:latest <youraccount>/<image-name>:latest
+sudo docker tag your-tag-name:latest your-docker-hub-account/image-name:latest
 
 
 3. Push the Docker image to Docker Hub:
 
-sudo docker push <youraccount>/<image-name>:latest
+sudo docker push your-docker-hub-account/image-name:latest
 
 
 ## Usage
@@ -28,8 +28,10 @@ Follow the steps below to use the setup:
 2. Update the `.env` file with your desired values:
 
 MYSQL_HOST=mysql
+
 MYSQL_PORT=3306
-MYSQL_ROOT_PASSWORD=<your-password>
+
+MYSQL_ROOT_PASSWORD=your-password
 
 
 3. Run the Docker Compose file. Before running, make sure to create the necessary Docker volumes to mount. 
