@@ -45,7 +45,7 @@ RUN sed -i 's/StartServers			 5/StartServers			 10/' /etc/apache2/mods-available
     sed -i 's/MaxConnectionsPerChild   0/MaxConnectionsPerChild   1000/' /etc/apache2/mods-available/mpm_prefork.conf
 
 # Set memory_limit to 128MB , post_max_size, and upload_max_filesize to 512MB
-RUN sed -i 's/memory_limit = .*/memory_limit = 128/' /etc/php5/apache2/php.ini \
+RUN sed -i 's/memory_limit = .*/memory_limit = 128M/' /etc/php5/apache2/php.ini \
     && sed -i 's/post_max_size = .*/post_max_size = 512M/' /etc/php5/apache2/php.ini \
     && sed -i 's/upload_max_filesize = .*/upload_max_filesize = 512M/' /etc/php5/apache2/php.ini
 
