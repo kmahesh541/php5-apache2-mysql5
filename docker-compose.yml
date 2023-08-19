@@ -1,7 +1,7 @@
 version: '3'
 services:
   mysql:
-    image: mysql:5.5.62
+    image: mysql:5.5.62 # here you can use latest version of mysql also , depending on your requirement
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     volumes:
