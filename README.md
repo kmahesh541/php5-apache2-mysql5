@@ -2,6 +2,8 @@
 
 This Docker image provides a setup for Apache2, PHP5, MySQL5, and phpMyAdmin. It allows you to quickly set up a development environment for PHP projects.
 
+## Install Docker Engine and Docker compose softwares
+
 ## Build and Push Docker Image
 
 1. Build the new Docker image:
