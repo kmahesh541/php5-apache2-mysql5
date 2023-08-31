@@ -2,6 +2,7 @@ version: '3'
 services:
   mysql:
     image: mysql:5.5.62 # here you can use latest version of mysql also , depending on your requirement
+    restart: unless-stopped
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     volumes:
@@ -12,6 +13,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
+    restart: unless-stopped
     environment:
       - UPLOAD_LIMIT=512M
     links:
@@ -21,6 +23,7 @@ services:
 
   my_apache_php:
     image: docker.io/kmahesh541/php5-apache2-mysql5
+    restart: unless-stopped
     volumes:
       - /var/www/html:/var/www/html
       - /var/www:/var/www
