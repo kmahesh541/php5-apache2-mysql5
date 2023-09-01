@@ -23,7 +23,7 @@ services:
 
   my_apache_php:
     image: docker.io/kmahesh541/php5-apache2-mysql5
-    restart: unless-stopped
+    restart: always
     volumes:
       - /var/www/html:/var/www/html
       - /var/www:/var/www
