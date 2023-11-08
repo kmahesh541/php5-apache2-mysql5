@@ -3,29 +3,10 @@
 This Docker image provides a setup for Apache2, PHP5, MySQL5, and phpMyAdmin. It allows you to quickly set up a development environment for PHP projects.
 
 ## Install Docker Engine and Docker compose softwares
-
-## Build and Push new Docker Image
-
-1. Build the new Docker image:
-
-  `sudo docker build --no-cache -t my_apache_php_image .`
-
-
-2. Tag the new Docker image:
-
-  `sudo docker tag your-tag-name:latest your-docker-hub-account/image-name:latest`
-
-
-3. Push the Docker image to Docker Hub:
-
-  `sudo docker push your-docker-hub-account/image-name:latest`
-
+  - For Ubuntu, sudo apt install docker-compose and  https://docs.docker.com/engine/install/ubuntu/
+  - 
 
 ## Usage
-
-## required
-  - install docker engine and docker-compose
-  - For Ubuntu, sudo apt install docker-compose and  https://docs.docker.com/engine/install/ubuntu/
 
 Follow the steps below to use the setup:
 
@@ -55,3 +36,20 @@ Follow the steps below to use the setup:
 
 The PHP5 and Apache2 docker image is available at https://hub.docker.com/r/kmahesh541/php5-apache2-mysql5
 
+
+## To Build and Push new Docker Image
+
+1. Build the new Docker image:
+
+  `sudo docker build --no-cache -t my_apache_php_image .`
+
+
+2. Tag the new Docker image:
+
+  `sudo docker tag your-tag-name:latest your-docker-hub-account/image-name:latest`
+
+
+3. Push the Docker image to Docker Hub:
+
+  `sudo docker push your-docker-hub-account/image-name:latest`
+  
