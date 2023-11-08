@@ -4,7 +4,7 @@ This Docker image provides a setup for Apache2, PHP5, MySQL5, and phpMyAdmin. It
 
 ## Install Docker Engine and Docker compose softwares
 
-## Build and Push Docker Image
+## Build and Push new Docker Image
 
 1. Build the new Docker image:
 
@@ -22,6 +22,10 @@ This Docker image provides a setup for Apache2, PHP5, MySQL5, and phpMyAdmin. It
 
 
 ## Usage
+
+## required
+  - install docker engine and docker-compose
+  - For Ubuntu, sudo apt install docker-compose and  https://docs.docker.com/engine/install/ubuntu/
 
 Follow the steps below to use the setup:
 
