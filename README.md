@@ -2,9 +2,11 @@
 
 This Docker image provides a setup for Apache2, PHP5, MySQL5, and phpMyAdmin. It allows you to quickly set up a development environment for PHP projects.
 
+
 ## Install Docker Engine and Docker compose softwares
-  - For Ubuntu, sudo apt install docker-compose and  https://docs.docker.com/engine/install/ubuntu/
-  - 
+For Ubuntu,
+  - to install docker engine , follow https://docs.docker.com/engine/install/ubuntu/
+  - sudo apt install docker-compose
 
 ## Usage
 
